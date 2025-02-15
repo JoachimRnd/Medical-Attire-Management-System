@@ -1,5 +1,5 @@
 {
-  "name": "Medical-Attire-Management-System",
+  "name": "medical-attire-management-system",
   "version": "1.0.0",
   "scripts": {
     "client": "npm start --prefix client",
