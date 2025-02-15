@@ -1,0 +1,22 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	-ms-overflow-style: none;  /* hide scrollbar in IE and Edge */
+	scrollbar-width: none;  /* hide scrollbar in Firefox */
+}
+*::-webkit-scrollbar {
+	display: none;
+}
+
+.dashboard,
+.myprofile,
+.scrubreports,
+.scrubrooms,
+.staffmembers {
+	display: flex;
+	height: 90vh;
+	align-items: center;
+	justify-content: center;
+	font-size: 3rem;
+}

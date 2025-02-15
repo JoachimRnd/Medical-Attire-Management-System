@@ -1,0 +1,19 @@
+.page-wrapper {
+	position: absolute;
+	inset: 0 0 0 0;
+	display: flex;
+	justify-content: stretch;
+	overflow: hidden;
+	align-items: stretch;
+
+	.content-wrapper {
+		position: relative;
+		padding: 2.5rem 2rem 2rem 2rem;
+		display: flex;
+		overflow: auto;
+		flex-direction: column;
+		height: 100%;
+		width: 100%;
+		gap: 2rem;
+	}
+}

@@ -1,0 +1,80 @@
+@use '../../../sass/variables' as c;
+
+.login-wrapper {
+	position: absolute;
+	inset: 0 0 0 0;
+	display: flex;
+	background-color: c.$blue-light-3;
+	justify-content: center;
+	flex-flow: column nowrap;
+	align-items: center;
+	padding: 1rem;
+
+	.logo {
+		position: absolute;
+		top: 2rem;
+		left: 2rem;
+		font-size: 3rem;
+		line-height: 100%;
+		font-weight: bold;
+		color: c.$blue-dark-3;
+		width: calc(100% - 2rem);
+		display: flex;
+		justify-content: flex-start;
+		div {
+			display: flex;
+			flex-flow: column nowrap;
+			span {
+				margin-left: 0.2rem;
+				line-height: 100%;
+				font-size: 1rem;
+				color: c.$blue-dark-1;
+			}
+		}
+	}
+
+	img {
+		position: fixed;
+		height: auto;
+		width: 100%;
+		opacity: 0.5;
+		z-index: 0;
+
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	@media only screen and (max-width: 1200px) {
+		img {
+			height: 100%;
+			width: auto;
+		}
+		.logo {
+			top: 1rem;
+			justify-content: center;
+		}
+	}
+
+	.login-card {
+		z-index: 1;
+		max-width: 600px;
+		width: 100%;
+		padding: 2rem;
+		background-color: c.$blue-light-5;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+		color: c.$blue-base;
+
+		.actions {
+			display: flex;
+			gap: 2rem;
+			justify-content: center;
+		}
+		.error-message {
+			color: c.$generic-red;
+			font-weight: bold;
+		}
+	}
+}

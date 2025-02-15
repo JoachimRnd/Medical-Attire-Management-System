@@ -1,0 +1,19 @@
+.status-banner {
+	width: 9rem;
+	height: 1.5rem;
+	color: white;
+	font-weight: bolder;
+	font-size: small;
+	text-align: center;
+	line-height: 1.5rem;
+	border-radius: 3px;
+}
+#overdue {
+	background-color: rgb(175, 68, 63);
+}
+#borrowed {
+	background-color: rgb(93, 148, 89);
+}
+#returned {
+	background-color: rgb(149, 150, 151);
+}

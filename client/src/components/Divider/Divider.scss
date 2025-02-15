@@ -1,0 +1,11 @@
+@use '../../sass/variables' as *;
+.sc-divider {
+	width: calc(100% - 2rem);
+	height: 1px;
+	margin: 1rem;
+	background-color: $blue-light-2;
+	&.vertical {
+		width: 2px;
+		height: calc(100% - 2rem);
+	}
+}

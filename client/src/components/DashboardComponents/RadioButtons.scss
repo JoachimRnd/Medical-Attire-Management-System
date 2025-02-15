@@ -1,0 +1,25 @@
+@use '../../sass/variables' as c;
+
+.css-heg063-MuiTabs-flexContainer {
+    color: c.$blue-base;
+    background-color: c.$blue-light-5;
+    margin-top: 20px;
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: c.$blue-light-5 !important;
+    background-color: c.$blue-base;
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+    color: c.$blue-base !important;
+    border-radius: 5px !important;
+}
+
+.css-1aquho2-MuiTabs-indicator {
+    background-color: c.$blue-base !important;
+}
+
+.tab {
+    font-family: 'Barlow', serif !important;
+}

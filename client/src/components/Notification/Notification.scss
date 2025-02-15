@@ -1,0 +1,51 @@
+@use '../../sass/variables' as *;
+
+.box {
+	width: 100%;
+	background-color: $blue-light-5;
+	border-bottom: 1px $blue-light-3 solid;
+	padding: 1.5rem;
+	display: flex;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $blue-light-4;
+	}
+	.dot {
+		width: 2rem;
+		display: flex;
+		align-items: center;
+		div {
+			width: 7px;
+			height: 7px;
+			border-radius: 50%;
+			background-color: #bd3a3a;
+		}
+	}
+
+	.information {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		font-weight: bold;
+
+		.top {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			font-size: 12px;
+
+			.author {
+				color: $blue-light-1;
+			}
+
+			.ts {
+				color: $blue-light-2;
+			}
+		}
+
+		.bottom {
+			color: $blue-dark-4;
+		}
+	}
+}

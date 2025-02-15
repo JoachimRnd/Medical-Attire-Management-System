@@ -1,0 +1,13 @@
+#description {
+  width: 30rem;
+  height: 10rem;
+}
+
+.input {
+  resize: none;
+}
+
+.input:focus {
+  text-decoration: none;
+  outline: none;
+}

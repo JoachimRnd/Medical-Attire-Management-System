@@ -1,0 +1,23 @@
+.type {
+  margin-bottom: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+.input {
+  background-color: rgb(241, 243, 249);
+  border-color: rgb(154, 172, 217);
+  border-radius: 2.5px;
+  color: rgb(154, 172, 217);
+  border: 1px solid rgb(154, 172, 217);
+  height: 2rem;
+  padding: 0 0 0 8px;
+}
+input::-webkit-input-placeholder {
+  color: rgb(154, 172, 217);
+}
+input:-ms-input-placeholder {
+  color: rgb(154, 172, 217);
+}

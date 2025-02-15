@@ -1,0 +1,37 @@
+@use '../../sass/variables' as c;
+
+.detailed-information {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 1.1rem;
+	text-transform: capitalize;
+
+	h3 {
+		color: c.$blue-dark-2;
+		line-height: 100%;
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+
+	.list {
+		display: flex;
+		list-style: none;
+		flex-direction: column;
+		gap: 0.5rem;
+
+		.item {
+			display: flex;
+			font-weight: bold;
+			font-size: 1rem;
+			line-height: 1rem;
+			.attribute {
+				min-width: 8rem;
+				color: c.$blue-light-2;
+				font-variant: small-caps;
+			}
+			.value {
+				color: c.$blue-base;
+			}
+		}
+	}
+}

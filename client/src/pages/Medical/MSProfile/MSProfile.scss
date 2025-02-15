@@ -1,0 +1,22 @@
+@use '../../../sass/variables' as c;
+
+.ms-scrubs-details {
+	position: absolute;
+	inset: 0 0 0 0;
+	display: flex;
+	gap: 50px;
+	flex-direction: column;
+	padding: 2rem;
+	background-color: c.$blue-light-4;
+	height: 100%;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		gap: 1.25rem;
+		h2 {
+			margin-top: 50px;
+		}
+	}
+}

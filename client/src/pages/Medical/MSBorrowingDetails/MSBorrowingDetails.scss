@@ -1,0 +1,70 @@
+@use '../../../sass/variables' as c;
+
+.ms-your-borrowings {
+	position: absolute;
+	inset: 0 0 0 0;
+	display: flex;
+	gap: 20px;
+	flex-direction: column;
+	padding: 2rem;
+	background-color: c.$blue-light-4;
+	.container {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		gap: 1.25rem;
+
+		.heading {
+			margin-top: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 0.875rem;
+
+			h2 {
+				flex: 1;
+				font-weight: bold;
+				font-size: 1.5rem;
+				line-height: 100%;
+				letter-spacing: 0.01em;
+				text-transform: capitalize;
+			}
+
+			.report-button {
+				display: flex;
+				gap: 3px;
+				justify-content: center;
+				color: c.$generic-red;
+				align-items: center;
+				font-weight: bold;
+				font-size: 14px;
+				line-height: 100%;
+				letter-spacing: 0.01em;
+				svg {
+					fill: currentColor;
+				}
+			}
+		}
+
+		.detailed-info {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			gap: 2rem;
+		}
+
+		.return {
+			display: flex;
+			flex-flow: column nowrap;
+			justify-content: center;
+			align-items: center;
+			gap: 0.5rem;
+			color: c.$blue-base;
+			div {
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
+			}
+		}
+	}
+}

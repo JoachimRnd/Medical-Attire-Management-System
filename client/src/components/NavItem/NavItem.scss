@@ -1,0 +1,32 @@
+@use '../../sass/variables' as c;
+
+.nav-item {
+	padding: 0.5rem 1.5rem;
+	font-weight: bold;
+	color: c.$blue-light-1;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	gap: 0.5rem;
+	border-radius: 0.2rem;
+	margin: 0.125rem 0;
+
+	svg {
+		fill: currentColor;
+		height: 1.25rem;
+		width: auto;
+	}
+
+	&.active {
+		color: c.$blue-dark-1;
+	}
+
+	&:hover {
+		color: c.$blue-dark-1;
+		background: linear-gradient(
+			90deg,
+			#6489d1 0%,
+			rgba(255, 255, 255, 0) 63.92%
+		);
+	}
+}
